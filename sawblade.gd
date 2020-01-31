@@ -10,7 +10,7 @@ func _ready():
 	finish = start + maxdistance
 	direction = 0
 
-func _process(delta):
+func _process(_delta):
 	$Blade.rotation_degrees += 10
 	var bodies = get_overlapping_bodies()
 	for body in bodies:

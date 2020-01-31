@@ -1,5 +1,5 @@
 extends Node2D
-export var speed = 0
+export var speed = 5
 const FIREBALL_SCENE = preload("realfireball.tscn")
 
 func _ready():
@@ -8,7 +8,7 @@ func _ready():
 
 func fire():
 	var fireball = FIREBALL_SCENE.instance()
-	get_parent().add_child(fireball)
+	get_parent().call_deferred("add_child", fireball)
 	fireball.position.y = position.y
 	fireball.position.x = position.x
 	fireball.rotation = rotation
