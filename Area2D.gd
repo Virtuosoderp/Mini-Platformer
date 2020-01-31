@@ -10,7 +10,7 @@ func _ready():
 	finish = start + maxdistance
 	direction = 0
 	
-func _process(delta):
+func _process(_delta):
 	if position.x == finish:
 		direction = 1
 		$AnimatedSprite.flip_h = true

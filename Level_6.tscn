@@ -11,7 +11,7 @@
 [ext_resource path="res://Heartpickup.tscn" type="PackedScene" id=9]
 [ext_resource path="res://endlevel.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Spikes.tscn" type="PackedScene" id=11]
-[ext_resource path="res://music/Laser Groove.wav" type="AudioStream" id=12]
+[ext_resource path="res://music/Laser Groove.ogg" type="AudioStream" id=12]
 
 [node name="Level_1" type="Node2D"]
 
@@ -71,7 +71,7 @@ position = Vector2( 34, 224 )
 position = Vector2( 34, 32 )
 
 [node name="coin20" parent="." instance=ExtResource( 7 )]
-position = Vector2( 34, 3.8147e-006 )
+position = Vector2( 34, 3.8147e-06 )
 
 [node name="coin21" parent="." instance=ExtResource( 7 )]
 position = Vector2( 32, -26.74 )

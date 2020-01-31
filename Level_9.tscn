@@ -7,6 +7,8 @@
 
 [node name="autotile" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
+format = 1
 
 [node name="regular" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
+format = 1

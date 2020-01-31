@@ -9,7 +9,7 @@
 [ext_resource path="res://Heartpickup.tscn" type="PackedScene" id=7]
 [ext_resource path="res://endlevel.tscn" type="PackedScene" id=8]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=9]
-[ext_resource path="res://music/Crinoline Dreams.wav" type="AudioStream" id=10]
+[ext_resource path="res://music/Crinoline Dreams.ogg" type="AudioStream" id=10]
 
 [node name="Level_2" type="Node2D"]
 
