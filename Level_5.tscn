@@ -8,11 +8,7 @@
 [ext_resource path="res://newenemy.tscn" type="PackedScene" id=6]
 [ext_resource path="res://endlevel.tscn" type="PackedScene" id=7]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=8]
-<<<<<<< HEAD
 [ext_resource path="res://music/Hustle.ogg" type="AudioStream" id=9]
-=======
-[ext_resource path="res://music/Night in Venice.ogg" type="AudioStream" id=9]
->>>>>>> 70fba828909e2011b9ce2cb49a834e44daf81e89
 [ext_resource path="res://Spikes.tscn" type="PackedScene" id=10]
 
 [node name="Level_5" type="Node2D"]

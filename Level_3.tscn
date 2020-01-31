@@ -52,7 +52,7 @@ rotation = 4.71239
 speed = 3
 
 [node name="fireshooter16" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1792, 320 )
+position = Vector2( 1793, 320 )
 rotation = 4.71239
 speed = 3
 
@@ -172,7 +172,7 @@ rotation = 4.71239
 speed = 3
 
 [node name="fireshooter7" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1730.34, 320 )
+position = Vector2( 1731.34, 320 )
 rotation = 4.71239
 speed = 3
 
