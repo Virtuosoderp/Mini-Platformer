@@ -22,7 +22,7 @@ tile_set = ExtResource( 2 )
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( -96, 212.5 )
+position = Vector2( 3799.24, 1550.08 )
 
 [node name="enemy" parent="." instance=ExtResource( 4 )]
 position = Vector2( 224, 288 )
@@ -166,7 +166,7 @@ position = Vector2( 2592, -32 )
 position = Vector2( 3488, -20.5 )
 
 [node name="endlevel" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4032, 1632 )
+position = Vector2( 4036.78, 1629.61 )
 world_scene = "res://Level_2.tscn"
 
 [node name="Heartpickup" parent="." instance=ExtResource( 8 )]

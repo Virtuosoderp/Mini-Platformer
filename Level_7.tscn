@@ -10,12 +10,11 @@
 [ext_resource path="res://endlevel.tscn" type="PackedScene" id=8]
 [ext_resource path="res://fireshooter.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Heartpickup.tscn" type="PackedScene" id=10]
-[ext_resource path="res://music/Video Dungeon Boss.wav" type="AudioStream" id=11]
+[ext_resource path="res://music/Video Dungeon Boss.ogg" type="AudioStream" id=11]
 
 [node name="Level_7" type="Node"]
 
 [node name="TileMap" type="TileMap" parent="."]
-editor/display_folded = true
 tile_set = ExtResource( 1 )
 collision_use_kinematic = true
 format = 1
@@ -61,7 +60,6 @@ position = Vector2( 2112, 11552 )
 position = Vector2( 1632, 11552 )
 
 [node name="coins" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="coin" parent="coins" instance=ExtResource( 4 )]
 position = Vector2( 160, 4596.5 )
@@ -856,10 +854,8 @@ position = Vector2( 2528, 4616.96 )
 position = Vector2( 2528, 4544 )
 
 [node name="Obstacles" type="Node" parent="."]
-editor/display_folded = true
 
 [node name="Spiketraps" type="Node" parent="Obstacles"]
-editor/display_folded = true
 
 [node name="Spikes" parent="Obstacles/Spiketraps" instance=ExtResource( 5 )]
 position = Vector2( 608, 4640 )
@@ -1772,7 +1768,6 @@ position = Vector2( 2234, 9707.5 )
 position = Vector2( 1632, 9696 )
 
 [node name="highblade" parent="Obstacles" instance=ExtResource( 7 )]
-editor/display_folded = true
 position = Vector2( 2752, 5088 )
 
 [node name="sawbladetrap3" parent="Obstacles" instance=ExtResource( 7 )]

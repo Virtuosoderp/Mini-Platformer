@@ -9,7 +9,7 @@
 [ext_resource path="res://Heartpickup.tscn" type="PackedScene" id=7]
 [ext_resource path="res://endlevel.tscn" type="PackedScene" id=8]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=9]
-[ext_resource path="res://music/Crinoline Dreams.wav" type="AudioStream" id=10]
+[ext_resource path="res://music/Crinoline Dreams.ogg" type="AudioStream" id=10]
 
 [node name="Level_2" type="Node2D"]
 
@@ -472,6 +472,5 @@ position = Vector2( 1696, -539.57 )
 [node name="coin20" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1600, -539.57 )
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
-autoplay = true

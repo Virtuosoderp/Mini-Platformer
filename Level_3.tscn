@@ -10,7 +10,7 @@
 [ext_resource path="res://sawbladetrap.tscn" type="PackedScene" id=8]
 [ext_resource path="res://coin.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Spikes.tscn" type="PackedScene" id=10]
-[ext_resource path="res://music/Jazz Brunch.wav" type="AudioStream" id=11]
+[ext_resource path="res://music/Jazz Brunch.ogg" type="AudioStream" id=11]
 
 [node name="Level_3" type="Node2D"]
 

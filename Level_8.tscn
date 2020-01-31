@@ -12,7 +12,7 @@
 [ext_resource path="res://endlevel.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Spikes.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=12]
-[ext_resource path="res://music/Mega Hyper Ultrastorm.wav" type="AudioStream" id=13]
+[ext_resource path="res://music/Mega Hyper Ultrastorm.ogg" type="AudioStream" id=13]
 
 [node name="Level_8" type="Node2D"]
 
@@ -47,7 +47,7 @@ position = Vector2( 544, -64 )
 position = Vector2( 544, -32 )
 
 [node name="coin7" parent="." instance=ExtResource( 4 )]
-position = Vector2( 544, -1.90735e-006 )
+position = Vector2( 544, -1.90735e-06 )
 
 [node name="coin8" parent="." instance=ExtResource( 4 )]
 position = Vector2( 544, 32 )
