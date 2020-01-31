@@ -1,7 +1,7 @@
 extends Area2D
 var motion = Vector2()
 
-func _process(delta):
+func _process(_delta):
 	position.x -= 3
 	var bodies = get_overlapping_bodies()
 	for body in bodies:

@@ -1,11 +1,11 @@
 extends Node2D
 export var heartnum = 0
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if Global.hearts > heartnum:
 		queue_free()
 
-func _on_heart_body_entered(body):
+func _on_heart_body_entered(_body):
 	var bodies = $heart.get_overlapping_bodies()
 	for body in bodies:
 		if body.name == "Player":

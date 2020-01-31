@@ -11,7 +11,7 @@ var invincible = false
 const respawn = preload("retry.tscn")
 var time = 0
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	$text/Actual_Score.set_text(str(Global.score))
 	$text/Actual_Health.set_text(str(health))
 	$text/Actual_Hearts.set_text(str(Global.hearts))
@@ -45,7 +45,7 @@ func _physics_process(delta):
 	
 func damage(enemypos, d):
 	var ex = enemypos.x
-	var ey = enemypos.y
+	#var ey = enemypos.y
 	if invincible != true:
 		health -= d
 		invincible = true
@@ -61,7 +61,7 @@ func damage(enemypos, d):
 		if is_on_floor():
 			motion.y -= 150
 	if health < 0:
-		var stop = Vector2(0,0)
+		var _stop = Vector2(0,0)
 		Global.score = 0
 		Global.died = 1
 		invincible = true
@@ -69,7 +69,7 @@ func damage(enemypos, d):
 		motion.x *= 0
 		motion.y *= 0
 		var scene_name = get_tree().get_current_scene().get_name()
-		get_tree().change_scene("res://" + str(scene_name) + ".tscn")
+		var _ret = get_tree().change_scene("res://" + str(scene_name) + ".tscn")
 		
 func score(s):
 	$coin_pickup.play()
