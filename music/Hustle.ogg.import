@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Hustle.ogg-a0afe516a1b017fcfcb0bad874b7312d.oggstr"
+
+[deps]
+
+source_file="res://music/Hustle.ogg"
+dest_files=[ "res://.import/Hustle.ogg-a0afe516a1b017fcfcb0bad874b7312d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

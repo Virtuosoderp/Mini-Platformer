@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://fireball.gd" type="Script" id=1]
+[ext_resource path="res://fireball-sprite-png-15.png" type="Texture" id=2]
+[ext_resource path="res://fireball.wav" type="AudioStream" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=4]
+curve = SubResource( 3 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+angular_velocity = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_curve = SubResource( 4 )
+hue_variation = 0.22
+hue_variation_random = 0.51
+
+[node name="fireball" type="Area2D"]
+rotation = 1.5708
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+material = SubResource( 2 )
+position = Vector2( -1.46, 0.52 )
+rotation = -1.5708
+scale = Vector2( 0.15, 0.1 )
+z_index = -1
+amount = 20
+lifetime = 7.0
+speed_scale = 21.88
+visibility_rect = Rect2( -100.7, -100.17, 200, 200 )
+process_material = SubResource( 5 )
+texture = ExtResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+process_mode = 0
+wait_time = 5.0
+autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = -25.0
+autoplay = true
+max_distance = 1000.0
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

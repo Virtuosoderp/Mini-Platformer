@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://retry_Screen.tscn" type="PackedScene" id=1]
+
+[node name="retry" type="Node2D"]
+
+[node name="retry_Screen" parent="." instance=ExtResource( 1 )]
+margin_left = -320.0
+margin_top = -192.0
+margin_right = -320.0
+margin_bottom = -192.0

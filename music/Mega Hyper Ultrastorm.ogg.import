@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Mega Hyper Ultrastorm.ogg-375029a29591b77085fed741b3e02cec.oggstr"
+
+[deps]
+
+source_file="res://music/Mega Hyper Ultrastorm.ogg"
+dest_files=[ "res://.import/Mega Hyper Ultrastorm.ogg-375029a29591b77085fed741b3e02cec.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

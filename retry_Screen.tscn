@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://retry_Screen.gd" type="Script" id=1]
+
+[node name="retry_Screen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 192.0
+margin_top = 128.0
+margin_right = 249.0
+margin_bottom = 142.0
+rect_scale = Vector2( 5, 5 )
+text = "You Died!"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 256.0
+margin_top = 224.0
+margin_right = 416.0
+margin_bottom = 244.0
+text = "Retry?"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

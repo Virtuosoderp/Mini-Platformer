@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -640.0
+margin_bottom = -360.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 640.0
+margin_bottom = 360.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 227.0
+margin_top = 143.0
+margin_right = 413.0
+margin_bottom = 217.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 186.0
+margin_bottom = 14.0
+text = "Thanks for playing the Demo!"
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 186.0
+margin_bottom = 32.0
+text = "Final Score:"
+align = 1
+
+[node name="Label3" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 36.0
+margin_right = 186.0
+margin_bottom = 50.0
+align = 1
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 54.0
+margin_right = 186.0
+margin_bottom = 74.0
+text = "play again I guess?"
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

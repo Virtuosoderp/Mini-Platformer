@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Laser Groove.ogg-d0e89981a131294aad70f664439f48fc.oggstr"
+
+[deps]
+
+source_file="res://music/Laser Groove.ogg"
+dest_files=[ "res://.import/Laser Groove.ogg-d0e89981a131294aad70f664439f48fc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

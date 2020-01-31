@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Getting it Done.ogg-f6be9aa1406a6b8419004d754ac8ff5c.oggstr"
+
+[deps]
+
+source_file="res://music/Getting it Done.ogg"
+dest_files=[ "res://.import/Getting it Done.ogg-f6be9aa1406a6b8419004d754ac8ff5c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

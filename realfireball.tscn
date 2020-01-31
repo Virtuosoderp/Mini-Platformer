@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://fireball.tscn" type="PackedScene" id=1]
+
+[node name="realfireball" type="Node2D"]
+position = Vector2( -1.21, 0 )
+
+[node name="fireball" parent="." instance=ExtResource( 1 )]
+position = Vector2( -20, 0 )
+rotation = 0.0

@@ -1,0 +1,402 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://DirtAutotile.tres" type="TileSet" id=1]
+[ext_resource path="res://JungleDirtTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://jump on mace.tscn" type="PackedScene" id=3]
+[ext_resource path="res://fireshooter.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sawbladetrap.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=7]
+[ext_resource path="res://newenemy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Heartpickup.tscn" type="PackedScene" id=9]
+[ext_resource path="res://endlevel.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Spikes.tscn" type="PackedScene" id=11]
+[ext_resource path="res://music/Laser Groove.wav" type="AudioStream" id=12]
+
+[node name="Level_1" type="Node2D"]
+
+[node name="autotile" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 65531, 0, 196608, 65532, 0, 196609, 65533, 0, 196609, 65534, 0, 196609, 65535, 0, 196610, 131065, 0, 196613, 262133, 0, 196613, 262135, 0, 196613, 327667, 0, 196613, 458737, 0, 196613, 589807, 0, 196613, 524288, 0, 196613, 589843, 0, 196608, 589844, 0, 196609, 589845, 0, 196609, 589846, 0, 196609, 589847, 0, 196610, 720884, 0, 196613, 786422, 0, 196613, 720914, 0, 196613, 917496, 0, 196613, 851977, 0, 196613, 851984, 0, 196613, 852005, 0, 196608, 852006, 0, 196609, 852007, 0, 196609, 852008, 0, 196609, 852009, 0, 196610, 1048570, 0, 196608, 1048571, 0, 196609, 1048572, 0, 196610, 983052, 0, 196608, 983053, 0, 196609, 983054, 0, 196609, 983055, 0, 196610, 983072, 0, 196608, 983073, 0, 196609, 983074, 0, 196609, 983075, 0, 196609, 983076, 0, 196610 )
+
+[node name="regular" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+format = 1
+
+[node name="Mace" parent="." instance=ExtResource( 3 )]
+position = Vector2( 264, 608 )
+
+[node name="Mace2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 448, 674 )
+
+[node name="fireshooter" parent="." instance=ExtResource( 4 )]
+position = Vector2( 320, 800 )
+rotation = 3.14159
+
+[node name="sawbladetrap" parent="." instance=ExtResource( 5 )]
+position = Vector2( 928, 928 )
+
+[node name="sawbladetrap2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1408, 544 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( 32, 480 )
+
+[node name="coin" parent="." instance=ExtResource( 7 )]
+position = Vector2( -32, 448 )
+
+[node name="coin4" parent="." instance=ExtResource( 7 )]
+position = Vector2( -32, 448 )
+
+[node name="coin2" parent="." instance=ExtResource( 7 )]
+position = Vector2( -96, 384 )
+
+[node name="coin13" parent="." instance=ExtResource( 7 )]
+position = Vector2( 34, 64 )
+
+[node name="coin14" parent="." instance=ExtResource( 7 )]
+position = Vector2( 34, 128 )
+
+[node name="coin16" parent="." instance=ExtResource( 7 )]
+position = Vector2( 34, 160 )
+
+[node name="coin17" parent="." instance=ExtResource( 7 )]
+position = Vector2( 34, 192 )
+
+[node name="coin18" parent="." instance=ExtResource( 7 )]
+position = Vector2( 34, 224 )
+
+[node name="coin19" parent="." instance=ExtResource( 7 )]
+position = Vector2( 34, 32 )
+
+[node name="coin20" parent="." instance=ExtResource( 7 )]
+position = Vector2( 34, 3.8147e-006 )
+
+[node name="coin21" parent="." instance=ExtResource( 7 )]
+position = Vector2( 32, -26.74 )
+
+[node name="coin15" parent="." instance=ExtResource( 7 )]
+position = Vector2( 34, 96 )
+
+[node name="coin3" parent="." instance=ExtResource( 7 )]
+position = Vector2( -160, 395.5 )
+
+[node name="coin5" parent="." instance=ExtResource( 7 )]
+position = Vector2( -216, 448 )
+
+[node name="coin6" parent="." instance=ExtResource( 7 )]
+position = Vector2( -256, 512 )
+
+[node name="coin28" parent="." instance=ExtResource( 7 )]
+position = Vector2( 600, 633.61 )
+
+[node name="coin7" parent="." instance=ExtResource( 7 )]
+position = Vector2( -256, 640 )
+
+[node name="coin27" parent="." instance=ExtResource( 7 )]
+position = Vector2( 600, 761.61 )
+
+[node name="coin9" parent="." instance=ExtResource( 7 )]
+position = Vector2( -320, 928 )
+
+[node name="coin12" parent="." instance=ExtResource( 7 )]
+position = Vector2( -256, 928 )
+
+[node name="coin8" parent="." instance=ExtResource( 7 )]
+position = Vector2( -256, 576 )
+
+[node name="coin29" parent="." instance=ExtResource( 7 )]
+position = Vector2( 600, 697.61 )
+
+[node name="coin10" parent="." instance=ExtResource( 7 )]
+position = Vector2( -320, 928 )
+
+[node name="coin11" parent="." instance=ExtResource( 7 )]
+position = Vector2( -256, 928 )
+
+[node name="coin22" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1920, 549.26 )
+
+[node name="coin23" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1984, 512 )
+
+[node name="coin24" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2048, 512 )
+
+[node name="coin25" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2112, 560.76 )
+
+[node name="coin30" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2112, 608 )
+
+[node name="coin32" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2112, 651.5 )
+
+[node name="coin26" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2112, 560.76 )
+
+[node name="coin31" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2112, 608 )
+
+[node name="coin33" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2112, 651.5 )
+
+[node name="enemy2" parent="." instance=ExtResource( 8 )]
+position = Vector2( -256, -32 )
+
+[node name="enemy3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1248, 544 )
+
+[node name="enemy4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2080, 928 )
+
+[node name="Mace3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1696, 608 )
+
+[node name="Mace4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1888, 608 )
+
+[node name="Heartpickup" parent="." instance=ExtResource( 9 )]
+position = Vector2( -45, -32 )
+heartnum = 6
+
+[node name="Mace5" parent="." instance=ExtResource( 3 )]
+position = Vector2( -912, 658 )
+rotation = 1.5708
+
+[node name="sawbladetrap3" parent="." instance=ExtResource( 5 )]
+position = Vector2( -544, 160 )
+
+[node name="sawbladetrap4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2208, 928 )
+
+[node name="endlevel" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2528, 800 )
+world_scene = "res://Level_7.tscn"
+
+[node name="ispikes" type="Node2D" parent="."]
+visible = false
+
+[node name="Spikes" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -1280, 1664 )
+
+[node name="Spikes41" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 736, 1664 )
+
+[node name="Spikes23" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -269, 1664 )
+
+[node name="Spikes56" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1747, 1664 )
+
+[node name="Spikes12" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -768, 1664 )
+
+[node name="Spikes37" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1248, 1664 )
+
+[node name="Spikes19" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 243, 1664 )
+
+[node name="Spikes48" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2259, 1664 )
+
+[node name="Spikes71" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2816, 1664 )
+
+[node name="Spikes6" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -1024, 1664 )
+
+[node name="Spikes40" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 992, 1664 )
+
+[node name="Spikes22" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -13, 1664 )
+
+[node name="Spikes34" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2003, 1664 )
+
+[node name="Spikes11" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -512, 1664 )
+
+[node name="Spikes43" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1504, 1664 )
+
+[node name="Spikes25" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 499, 1664 )
+
+[node name="Spikes36" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2515, 1664 )
+
+[node name="Spikes70" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 3072, 1664 )
+
+[node name="Spikes4" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -1152, 1664 )
+
+[node name="Spikes47" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 864, 1664 )
+
+[node name="Spikes28" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -141, 1664 )
+
+[node name="Spikes59" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1875, 1664 )
+
+[node name="Spikes15" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -640, 1664 )
+
+[node name="Spikes38" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1376, 1664 )
+
+[node name="Spikes20" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 371, 1664 )
+
+[node name="Spikes55" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2387, 1664 )
+
+[node name="Spikes73" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2944, 1664 )
+
+[node name="Spikes8" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -896, 1664 )
+
+[node name="Spikes39" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1120, 1664 )
+
+[node name="Spikes21" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 115, 1664 )
+
+[node name="Spikes45" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2131, 1664 )
+
+[node name="Spikes10" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -384, 1664 )
+
+[node name="Spikes54" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1632, 1664 )
+
+[node name="Spikes32" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 627, 1664 )
+
+[node name="Spikes62" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2643, 1664 )
+
+[node name="Spikes67" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 3200, 1664 )
+
+[node name="Spikes2" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -1216, 1664 )
+
+[node name="Spikes33" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 800, 1664 )
+
+[node name="Spikes17" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -205, 1664 )
+
+[node name="Spikes49" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1811, 1664 )
+
+[node name="Spikes9" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -704, 1664 )
+
+[node name="Spikes51" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1312, 1664 )
+
+[node name="Spikes30" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 307, 1664 )
+
+[node name="Spikes63" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2323, 1664 )
+
+[node name="Spikes68" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2880, 1664 )
+
+[node name="Spikes5" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -960, 1664 )
+
+[node name="Spikes46" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1056, 1664 )
+
+[node name="Spikes27" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 51, 1664 )
+
+[node name="Spikes60" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2067, 1664 )
+
+[node name="Spikes14" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -448, 1664 )
+
+[node name="Spikes44" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1568, 1664 )
+
+[node name="Spikes26" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 563, 1664 )
+
+[node name="Spikes58" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2579, 1664 )
+
+[node name="Spikes65" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 3136, 1664 )
+
+[node name="Spikes3" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -1088, 1664 )
+
+[node name="Spikes42" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 928, 1664 )
+
+[node name="Spikes24" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -77, 1664 )
+
+[node name="Spikes57" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1939, 1664 )
+
+[node name="Spikes13" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -576, 1664 )
+
+[node name="Spikes35" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1440, 1664 )
+
+[node name="Spikes18" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 435, 1664 )
+
+[node name="Spikes52" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2451, 1664 )
+
+[node name="Spikes72" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 3008, 1664 )
+
+[node name="Spikes7" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -832, 1664 )
+
+[node name="Spikes53" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1184, 1664 )
+
+[node name="Spikes31" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 179, 1664 )
+
+[node name="Spikes64" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2195, 1664 )
+
+[node name="Spikes69" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2752, 1664 )
+
+[node name="Spikes16" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( -320, 1664 )
+
+[node name="Spikes50" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 1696, 1664 )
+
+[node name="Spikes29" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 691, 1664 )
+
+[node name="Spikes61" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 2707, 1664 )
+
+[node name="Spikes66" parent="ispikes" instance=ExtResource( 11 )]
+position = Vector2( 3264, 1664 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+autoplay = true
